@@ -23,6 +23,8 @@
 		455AC3EC1859FE5B00A56807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455AC3CE1859FE5B00A56807 /* UIKit.framework */; };
 		455AC3F41859FE5B00A56807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 455AC3F21859FE5B00A56807 /* InfoPlist.strings */; };
 		455AC3F61859FE5B00A56807 /* MagicalRecordSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 455AC3F51859FE5B00A56807 /* MagicalRecordSampleTests.m */; };
+		45B9038C185B2FA30026D0DF /* _Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B90389185B2FA30026D0DF /* _Memo.m */; };
+		45B9038D185B2FA30026D0DF /* Memo.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B9038B185B2FA30026D0DF /* Memo.m */; };
 		45DCCA22185B2024001E9237 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DCCA21185B2024001E9237 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,10 @@
 		455AC3F11859FE5B00A56807 /* MagicalRecordSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicalRecordSampleTests-Info.plist"; sourceTree = "<group>"; };
 		455AC3F31859FE5B00A56807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		455AC3F51859FE5B00A56807 /* MagicalRecordSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordSampleTests.m; sourceTree = "<group>"; };
+		45B90388185B2FA30026D0DF /* _Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Memo.h; path = Models/_Memo.h; sourceTree = "<group>"; };
+		45B90389185B2FA30026D0DF /* _Memo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Memo.m; path = Models/_Memo.m; sourceTree = "<group>"; };
+		45B9038A185B2FA30026D0DF /* Memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Memo.h; path = Models/Memo.h; sourceTree = "<group>"; };
+		45B9038B185B2FA30026D0DF /* Memo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Memo.m; path = Models/Memo.m; sourceTree = "<group>"; };
 		45DCCA20185B2024001E9237 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		45DCCA21185B2024001E9237 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		5D8E062B0B9645AF82D88A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -91,6 +97,10 @@
 		4511D0FC185B16A300C542A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				45B90388185B2FA30026D0DF /* _Memo.h */,
+				45B90389185B2FA30026D0DF /* _Memo.m */,
+				45B9038A185B2FA30026D0DF /* Memo.h */,
+				45B9038B185B2FA30026D0DF /* Memo.m */,
 				4511D0FD185B16D500C542A4 /* MagicalRecordSample.xcdatamodeld */,
 			);
 			name = Models;
@@ -309,6 +319,8 @@
 				4511D102185B1D6300C542A4 /* ListViewController.m in Sources */,
 				455AC3DB1859FE5B00A56807 /* AppDelegate.m in Sources */,
 				4511D0FF185B16D500C542A4 /* MagicalRecordSample.xcdatamodeld in Sources */,
+				45B9038C185B2FA30026D0DF /* _Memo.m in Sources */,
+				45B9038D185B2FA30026D0DF /* Memo.m in Sources */,
 				45DCCA22185B2024001E9237 /* EditViewController.m in Sources */,
 				455AC3D71859FE5B00A56807 /* main.m in Sources */,
 			);
