@@ -17,13 +17,13 @@
 		455AC3D71859FE5B00A56807 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 455AC3D61859FE5B00A56807 /* main.m */; };
 		455AC3DB1859FE5B00A56807 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 455AC3DA1859FE5B00A56807 /* AppDelegate.m */; };
 		455AC3DE1859FE5B00A56807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455AC3DC1859FE5B00A56807 /* Main.storyboard */; };
-		455AC3E11859FE5B00A56807 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455AC3E01859FE5B00A56807 /* ViewController.m */; };
 		455AC3E31859FE5B00A56807 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455AC3E21859FE5B00A56807 /* Images.xcassets */; };
 		455AC3EA1859FE5B00A56807 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455AC3E91859FE5B00A56807 /* XCTest.framework */; };
 		455AC3EB1859FE5B00A56807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455AC3CA1859FE5B00A56807 /* Foundation.framework */; };
 		455AC3EC1859FE5B00A56807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 455AC3CE1859FE5B00A56807 /* UIKit.framework */; };
 		455AC3F41859FE5B00A56807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 455AC3F21859FE5B00A56807 /* InfoPlist.strings */; };
 		455AC3F61859FE5B00A56807 /* MagicalRecordSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 455AC3F51859FE5B00A56807 /* MagicalRecordSampleTests.m */; };
+		45DCCA22185B2024001E9237 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DCCA21185B2024001E9237 /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,14 +51,14 @@
 		455AC3D91859FE5B00A56807 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		455AC3DA1859FE5B00A56807 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		455AC3DD1859FE5B00A56807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		455AC3DF1859FE5B00A56807 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		455AC3E01859FE5B00A56807 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		455AC3E21859FE5B00A56807 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		455AC3E81859FE5B00A56807 /* MagicalRecordSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicalRecordSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		455AC3E91859FE5B00A56807 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		455AC3F11859FE5B00A56807 /* MagicalRecordSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicalRecordSampleTests-Info.plist"; sourceTree = "<group>"; };
 		455AC3F31859FE5B00A56807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		455AC3F51859FE5B00A56807 /* MagicalRecordSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordSampleTests.m; sourceTree = "<group>"; };
+		45DCCA20185B2024001E9237 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		45DCCA21185B2024001E9237 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		5D8E062B0B9645AF82D88A66 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F001AD76325F45278FD0C93E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,8 +136,8 @@
 				455AC3DC1859FE5B00A56807 /* Main.storyboard */,
 				4511D100185B1D6300C542A4 /* ListViewController.h */,
 				4511D101185B1D6300C542A4 /* ListViewController.m */,
-				455AC3DF1859FE5B00A56807 /* ViewController.h */,
-				455AC3E01859FE5B00A56807 /* ViewController.m */,
+				45DCCA20185B2024001E9237 /* EditViewController.h */,
+				45DCCA21185B2024001E9237 /* EditViewController.m */,
 				4511D0FC185B16A300C542A4 /* Models */,
 				455AC3E21859FE5B00A56807 /* Images.xcassets */,
 				455AC3D11859FE5B00A56807 /* Supporting Files */,
@@ -307,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4511D102185B1D6300C542A4 /* ListViewController.m in Sources */,
-				455AC3E11859FE5B00A56807 /* ViewController.m in Sources */,
 				455AC3DB1859FE5B00A56807 /* AppDelegate.m in Sources */,
 				4511D0FF185B16D500C542A4 /* MagicalRecordSample.xcdatamodeld in Sources */,
+				45DCCA22185B2024001E9237 /* EditViewController.m in Sources */,
 				455AC3D71859FE5B00A56807 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

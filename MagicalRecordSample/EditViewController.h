@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  EditViewController.h
 //  MagicalRecordSample
 //
-//  Created by Hiroshi Shimoju on 2013/12/12.
+//  Created by Hiroshi Shimoju on 2013/12/13.
 //  Copyright (c) 2013年 shimoju. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface EditViewController : UIViewController
 
 @end

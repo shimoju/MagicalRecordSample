@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="-455" y="91"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="EditViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Od-Yh-zWa"/>
                         <viewControllerLayoutGuide type="bottom" id="Gax-IZ-B3S"/>
