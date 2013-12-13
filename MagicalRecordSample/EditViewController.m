@@ -10,6 +10,10 @@
 
 @interface EditViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
+- (IBAction)didDoneButtonTap:(id)sender;
+
 @end
 
 @implementation EditViewController
@@ -33,6 +37,9 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)didDoneButtonTap:(id)sender {
 }
 
 @end
