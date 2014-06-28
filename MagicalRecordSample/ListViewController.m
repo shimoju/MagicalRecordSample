@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "Memo.h"
 
 @interface ListViewController ()
 
@@ -44,16 +45,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [Memo MR_countOfEntities];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -62,7 +61,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    NSArray *memos = [Memo MR_findAllSortedBy:@"updatedAt" ascending:NO];
+    Memo *memo = memos[indexPath.row];
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    [fmt setDateStyle:NSDateFormatterShortStyle];
+    [fmt setTimeStyle:NSDateFormatterShortStyle];
+
+    cell.textLabel.text = memo.text;
+    cell.detailTextLabel.text = [fmt stringFromDate:memo.updatedAt];
+
     return cell;
 }
 

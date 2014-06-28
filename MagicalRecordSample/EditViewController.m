@@ -7,6 +7,7 @@
 //
 
 #import "EditViewController.h"
+#import "Memo.h"
 
 @interface EditViewController ()
 
@@ -40,6 +41,16 @@
 }
 
 - (IBAction)didDoneButtonTap:(id)sender {
+    NSLog(@"count = %@", [Memo MR_numberOfEntities]);
+    Memo *memo = [Memo MR_createEntity];
+    memo.updatedAt = [NSDate date];
+    memo.text = self.textView.text;
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+
+    NSLog(@"text = %@", self.textView.text);
+    NSLog(@"count = %@", [Memo MR_numberOfEntities]);
+
+    [self.view endEditing:YES];
 }
 
 @end
